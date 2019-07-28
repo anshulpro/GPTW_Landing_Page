@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ekincare Packages</title>
+        <link href="eKincare.ico" rel="icon">
+        <meta name="description" content="ekincare Packages">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ekincare_global.css" >
+        <style>
+            /* Removing anchor tag default decoration */
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            body {
+                font-family: "proxima nova",sans-serif;
+            }
+            a:hover{
+                color: #2168f3;
+            }
+            ::-webkit-scrollbar {
+                width: 0px;  /* remove scrollbar space */
+                background: transparent;  /* make scrollbar invisible */
+            }
+            input::placeholder{
+                color: grey;
+                font-size: 0.875rem;
+            }
+            .dot {
+                height: 05px;
+                width: 05px;
+                background-color: #000;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 3px 10px 0px 3px;
+            }
+        </style>
+        <script>
+            //function to show and hide the popup for package plan
+            function show_package_popup(){   document.getElementById("package_popup").style.display="flex";  }
+            function hide_package_popup(){   document.getElementById("package_popup").style.display="none";  }
+        </script>
+    </head>
+
+<body style="height: 100vh; margin: 0 auto; position: relative">
+
+        <!--BLUE BORDER-->
+        <div class="h-1 w-full bg-blue"></div>
+
+        <!--EKINCARE LOGO-->
+        <div class="flex flex-row bg-white h-16 px-4 items-center justify-between">
+            <div class="w-24"><a href="#"><img src="ekincare_logo.png"></a></div>
+            <div class="mt-4" style="width: 180px"><a href="#"><img src="India's%20Best%20Workplaces.png"></a></div>
+        </div>
+
+        <!-- DATA DRIVEN-->
+         <section class="flex flex-col items-center flex-no-grow text-center mt-6 mb-12">
+            <div class="font-extrabold text-5xl text-grey-darkest leading-tight">Data Driven<br>Health Benefits Platform </div>
+            <div class="font-regular text-sm leading-normal text-grey-light my-1">An integrated health platform providing complete preventive healthcare at your fingertips.</div>
+            <div class="w-auto px-8 max-w-sm"><img src="dashboard.png" style="min-width: 300px;"></div>
+        </section>
+
+        <!--EKINCARE METRICS-->
+        <section class="flex flex-col items-center bg-grey-lightest text-center py-12">
+            <div class="text-sm mb-10 font-base text-black leading-normal text-center"> Our Patent pending wellness platform integrates medical records, healthcare services and<br>predictive analytics to design wellness initiatives and reduce healthcare costs.</div>
+            <div class="flex flex-row flex-wrap self-center justify-center">
+                <div class="flex flex-col items-center self-center p-4 mr-4">
+                    <div class="text-4xl font-extrabold text-grey-darkest" style="text-shadow: "> - 25 % </div>
+                    <div class="text-xs text-grey-darkest font-normal leading-normal text-center"> Decrease in employee healthcare <br> costs for organizations</div>
+                </div>
+                <div class="flex flex-col items-center self-center p-4 mx-4">
+                    <div class="text-4xl font-extrabold text-grey-darkest">- 10 % </div>
+                    <div class="text-xs text-grey-darkest font-normal leading-normal text-center">Decrease in group insurance <br> premiums </div>
+                </div>
+                <div class="flex flex-col items-center self-center p-4 ml-4">
+                    <div class="text-4xl font-extrabold text-grey-darkest">+ 80 %</div>
+                    <div class="text-xs text-grey-darkest font-normal leading-normal text-center">Increase in engagement with <br> your employees </div>
+                </div>
+            </div>
+        </section>
+
+        <!--BLUE BORDER-->
+        <div class="h-1 w-full bg-blue"></div>
+
+        <!--EKINCARE BENEFITS-->
+        <section>
+            <div class="font-extrabold text-grey-darkest mt-12 mb-12 mx-12 text-2xl">ekincare benefits</div>
+            <div class="relative flex flex-row bg-grey-lightest mx-12 rounded">
+                <div class="p-6 w-1/3">
+                    <div class="font-extrabold mb-4 text-grey-darkest">For Employee</div>
+                    <ul class="list-reset text-sm">
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Digitize Health Records</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">24x7 Doctor Consultations</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Booking Health Checks</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Order Medicines Online</li>
+                        <li class="flex py-2 leading-normal"><img class="h-4 mr-3" src="Bulb.svg">Track health of up to 5<br>dependents</li>
+                    </ul>
+                </div>
+                <div class="p-6 w-1/3">
+                    <div class="font-extrabold mb-4 text-grey-darkest">For HR</div>
+                    <ul class="list-reset text-sm">
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Real Time Dashboard</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Deep Analytics</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Employee Engagement</li>
+                        <li class="flex py-2"><img class="h-4 mr-3" src="Bulb.svg">Targeted Intervention</li>
+                        <li class="flex py-2 leading-normal"><img class="h-4 mr-3" src="Bulb.svg">Reduction in Group Insurance<br>Premiums</li>
+                    </ul>
+                </div>
+                <div class="absolute pin-r p-6 bg-white flex-no-shrink flex-no-grow text-grey-darkest rounded shadow-md -mt-16" style="width: 320px;">
+                    <div class="text-xl">Interested to<span class="font-extrabold">&nbsp;know more ?</span></div>
+                    <div class="flex flex-col py-2 flex-no-shrink mt-4">
+                        <label class="font-semibold text-sm my-2">Name</label>
+                        <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Type your full name here">
+                    </div>
+                    <div class="flex flex-col py-2 flex-no-shrink">
+                        <label class="font-semibold text-sm my-2">Email ID</label>
+                        <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Type your email here">
+                    </div>
+                    <div class="flex flex-col py-2 flex-no-shrink">
+                        <label class="font-semibold text-sm my-2">Phone Number</label>
+                        <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Type your phone number">
+                    </div>
+                    <div class="flex flex-col py-2 flex-no-shrink">
+                        <label class="font-semibold text-sm my-2">Company Name</label>
+                        <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Type your company name">
+                    </div>
+                    <div class="text-sm w-24 h-8 mt-4 mb-4 text-center text-white px-4 py-2 font-semibold rounded-full cursor-pointer bg-blue hover:shadow"> Submit </div>
+                </div>
+            </div>
+        </section>
+
+        <!--AVAIL THIS ONE-TIME OPPORTUNITY-->
+        <section class="relative flex flex-col items-center flex-no-shrink flex-no-grow text-center mb-12" style="margin-top: 15rem">
+            <div class="absolute h-24 text-sm text-left p-2 text-white leading-tight" style="top: 09rem; left: 0vw; background-color: #003366; border-left: 6px solid #cc0000; width: 150px; padding: 32px 0 0 08px">Only for<br><span class="font-extrabold">Great Workplaces,<br>IT - BPM,</span> 2018</div>
+
+            <div class="font-extrabold text-4xl text-grey-darkest leading-tight">Avail this one-time opportunity</div>
+            <div class="font-regular text-sm leading-normal text-grey-light mt-1 mb-24">Access your employee's health status and create personalized<br>care management solution.</div>
+
+            <div class="relative flex flex-row bg-grey-lightest rounded my-24" style="width: 90vw">
+                <div class="flex flex-col px-4 py-4" style="width: 22vw">
+                    <div class="font-semibold text-sm self-start">ekincare Essential</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-3"><span class="flex-no-shrink dot"></span>Mobile App, Health Record,<br> Family Management,<br>HR Dashboard, Web Portal</div>
+
+                    <div class="font-semibold text-sm self-start mt-6">ekincare Access</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-3"><span class="flex-no-shrink dot"></span>Dental, Vision</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Doctor Consultation</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Health Coach<br>(Nutrition + General Physician)</div>
+<!--                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Gym</div>-->
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Health Check</div>
+
+                    <div class="font-semibold text-sm self-start mt-6">ekincare Engage</div>
+
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-3"><span class="flex-no-shrink dot"></span>Digitization, Social Challenges,<br> Health Articles, Daily Tips,<br>Medical Invoices,<br>Wellness Wallet</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Wellness Points</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-2"><span class="flex-no-shrink dot"></span>Wellness Tracker</div>
+
+                    <div class="font-semibold text-sm self-start mt-6 text-black">ekincare Track</div>
+                    <div class="flex font-normal text-xs self-start text-left leading-tight mt-3"><span class="flex-no-shrink dot"></span>Realtime Analytics,<br>Utilization Data,<br>Health Risk Assessment (HRA)</div>
+                    <div class="font-semibold text-sm self-start text-left mt-4">Discount provided<br>on Health Services</div>
+                </div>
+
+                <div class="flex flex-row bg-white shadow-md rounded" style="width:66.4vw; margin-top: -150px; margin-bottom: -20px">
+                    <!--SILVER-->
+                    <div class="flex flex-col w-1/4 border-t-4 border-solid border-yellow rounded-tl rounded-b text-center items-center hover:shadow-lg hover:bg-grey-lightest hover:border-blue hover:rounded">
+                        <div class="text-sm text-grey-light mt-4 uppercase">Silver</div>
+                        <div class="flex flex-col text-center">
+                            <div class="text-3xl font-extrabold">499</div>
+                            <div class="text-xs font-normal">per month</div>
+                        </div>
+                        <div class="text-xs mt-4 text-grey-light">MRP Rs. 7,700*</div>
+                        <div class="flex flex-row justify-center items-center bg-blue rounded-full w-24 h-8 mt-3 mb-5 hover:shadow cursor-pointer" onclick="show_package_popup()">
+                            <div class="text-white text-xs mt-1 font-semibold">GET THIS</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-3 ml-1 text-white">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-8 mb-10">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue mt-6 h-4">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-3 mb-3">4</div>
+                        <div class="text-xs text-black mt-3 mb-2">1 month free</div>
+<!--                        <div class="text-xs text-black mt-1">-</div>-->
+                        <div class="text-xs text-black mt-1 mb-2">Basic (Vitals + TC)</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-16 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-8">-</div>
+                        <div class="text-xs text-black mt-3 mb-6">-</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-10 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-10 mb-2">upto 15%</div>
+                    </div>
+
+                    <!--GOLD-->
+                    <div class="flex flex-col w-1/4 border-t-4 border-solid border-yellow rounded-b text-center items-center hover:shadow-lg hover:bg-grey-lightest hover:border-blue">
+                        <div class="text-sm text-grey-light mt-4 uppercase">Gold</div>
+                        <div class="flex flex-col text-center">
+                            <div class="text-3xl font-extrabold">999</div>
+                            <div class="text-xs font-normal">per month</div>
+                        </div>
+                        <div class="text-xs mt-4 text-grey-light">MRP Rs. 11,200*</div>
+                        <div class="flex flex-row justify-center items-center bg-blue rounded-full w-24 h-8 mt-3 mb-5 hover:shadow cursor-pointer">
+                            <div class="text-white text-xs mt-1 font-semibold">GET THIS</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-3 ml-1 text-white">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-8 mb-10">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue mt-6 h-4">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-3 mb-3">Unlimited</div>
+                        <div class="text-xs text-black mt-3 mb-2">3 months free</div>
+<!--                        <div class="text-xs text-black mt-1">3 months free</div>-->
+                        <div class="text-xs text-black mt-1 mb-2">Advanced</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-16 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-8">-</div>
+                        <div class="text-xs text-black mt-3 mb-6">-</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-10 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-10 mb-2">upto 15%</div>
+                    </div>
+
+                    <!--PLATINUM-->
+                    <div class="relative flex flex-col w-1/4 border-t-4 border-solid border-yellow text-center rounded-b items-center hover:shadow-lg hover:bg-grey-lightest hover:border-blue">
+                        <div class="text-sm text-grey-light mt-4 uppercase">Platinum</div>
+                        <div class="flex flex-col text-center">
+                            <div class="text-3xl font-extrabold">2,999</div>
+                            <div class="text-xs font-normal">per month</div>
+                        </div>
+                        <div class="text-xs mt-4 text-grey-light">MRP Rs. 23,400*</div>
+                        <div class="flex flex-row justify-center items-center bg-blue rounded-full w-24 h-8 mt-3 mb-5 hover:shadow cursor-pointer">
+                            <div class="text-white text-xs mt-1 font-semibold">GET THIS</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-3 ml-1 text-white">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-8 mb-10">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue mt-6 h-4">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-3 mb-3">Unlimited</div>
+                        <div class="text-xs text-black mt-3 mb-2">6 months free</div>
+<!--                        <div class="text-xs text-black mt-1">Unlimited</div>-->
+                        <div class="text-xs text-black mt-1 mb-2">Comprehensive</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-16 mb-6">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+
+                        <div class="text-xs text-black mt-3 mb-6">-</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-10 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-10 mb-2">upto 15%</div>
+
+                        <div class="absolute flex flex-row items-center bg-white border border-dashed border-grey-lighter px-4 pt-2 pb-1 rounded-t-lg" style="top: -30px; z-index: -100;">
+                            <div class="font-semibold text-xs tracking-wide text-grey-dark">popular</div>
+                        </div>
+                    </div>
+
+                    <!--DIAMOND-->
+                    <div class="flex flex-col w-1/4 border-t-4 border-solid border-yellow rounded-tr rounded-b rounded-tr text-center items-center hover:shadow-lg hover:bg-grey-lightest hover:border-blue">
+                        <div class="text-sm text-grey-light mt-4 uppercase">diamond</div>
+                        <div class="flex flex-col text-center">
+                            <div class="text-3xl font-extrabold">4,999</div>
+                            <div class="text-xs font-normal">per month</div>
+                        </div>
+                        <div class="text-xs mt-4 text-grey-light">MRP Rs. 28,400*</div>
+                        <div class="flex flex-row justify-center items-center bg-blue rounded-full w-24 h-8 mt-3 mb-5 hover:shadow cursor-pointer">
+                            <div class="text-white text-xs mt-1 font-semibold">GET THIS</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-3 ml-1 text-white">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-8 mb-10">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue mt-6 h-4">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-3 mb-3">Unlimited</div>
+                        <div class="text-xs text-black mt-3 mb-2">Unlimited</div>
+<!--                        <div class="text-xs text-black mt-1">Unlimited</div>-->
+                        <div class="text-xs text-black mt-1 mb-2">Comprehensive</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-16 mb-6">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-2 ">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-2 mb-6">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-blue h-4 mt-10 mb-1">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="text-xs text-black mt-10 mb-2">upto 15%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute self-start text-grey-light" style="bottom: 56px; left: 27vw; font-size: 10px;">* Prices are per year per employee</div>
+        </section>
+
+        <!--GET THIS PACKAGE POPUP -->
+        <section id="package_popup" class="flex-no-shrink" style="display:none">
+        <!--overlay for the popup-->
+        <div id="overlay" onclick ="hide_package_popup()" style="position:fixed; display:block; width:100%; height:100%; top:0; left:0; right:0; bottom:0; background-color: rgba(0,0,0,0.5); z-index: 100000000; cursor: pointer">
+        </div>
+        <!--form-->
+        <section class="flex-row rounded-lg flex-no-shrink overflow-y-auto flex-no-grow p-6" style="position:fixed; z-index: 999999999; top: 10vw; left: 10vw; right: 10vw; max-width: 400px;  margin: auto auto auto auto; background-color: white;">
+        <div class="absolute cursor-pointer w-4" onclick="hide_package_popup()" style="right: 20px; top: 20px;"><img src="close.svg"></div>
+            <div class="flex flex-col justify-center flex-no-shrink"style="width: 100%">
+                <div class="flex flex-col justify-between mb-4 flex-no-shrink">
+                    <div class="font-bold text-xl text-grey-darkest">You have selected</div>
+                    <div class="font-extrabold text-4xl text-blue">Silver Plan</div>
+                    <div class="text-base font-normal text-black text-left mt-2">MRP Rs.&nbsp;<span class="font-semibold">499</span><span class="text-xs"> per month per employee </span></div>
+                </div>
+                <div class="flex flex-col py-2 flex-no-shrink">
+                    <label class="font-semibold text-sm my-2">Name</label>
+                    <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Enter your Full Name">
+                </div>
+                <div class="flex flex-col py-2 flex-no-shrink">
+                    <label class="font-semibold text-sm my-2">Email ID</label>
+                    <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="email" width="inherit" height="4rem" placeholder="Enter your Email Id">
+                </div>
+                <div class="flex flex-col py-2 flex-no-shrink">
+                    <label class="font-semibold text-sm my-2">Phone</label>
+                    <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Enter your Phone Number">
+                </div>
+                <div class="flex flex-col py-2 flex-no-shrink">
+                    <label class="font-semibold text-sm my-2">Company Name</label>
+                    <input class="h-8 px-2 rounded border border-solid border-grey-lighter" type="text" width="inherit" height="4rem" placeholder="Enter your Company Name">
+                </div>
+
+                <div class="text-sm w-24 h-8 mt-4 flex-no-shrink text-center text-white px-4 py-2 font-semibold rounded-full cursor-pointer bg-blue hover:shadow"> Submit </div>
+            </div>
+        </section>
+        </section>
+
+        <!--TRUSTED BY FORTUNE 500 Companies -->
+        <section class="flex flex-col mt-12 justify-center flex-no-shrink flex-no-grow py-8">
+            <div class="text-black font-bold text-xl self-center mb-4"> Trusted by Fortune 500 companies </div>
+            <div class="flex flex-row flex-wrap self-center justify-around mx-4 opacity-50">
+                    <div class="w-24 self-center mx-4 my-2"><img src="optum.png"></div>
+                    <div class="w-24 self-center mx-2 my-2"><img src="barclays.png"></div>
+                    <div class="w-24 self-center mx-4 my-2"><img src="kotak.png"></div>
+                    <div class="w-24 self-center mx-2 my-2"><img src="open%20text.png"></div>
+                    <div class="w-10 self-center mx-4 my-2"><img src="unilever.png"></div>
+                    <div class="w-24 text-center self-center text-lg font-semibold mx-4 my-2">65 more</div>
+            </div>
+        </section>
+
+        <!--WHAT OUR CUSTOMERS SAY-->
+        <section class="flex flex-col bg-grey-lightest items-center flex-no-shrink flex-no-grow py-16">
+            <div class="font-extrabold text-3xl mb-8"> What our Customers Say</div>
+
+                <div class="w-16"><img class="rounded-full" src="customer_image.png"></div>
+                <div class="flex flex-row max-w-sm mx-8">
+                    <div class="hidden w-8 flex-no-shrink flex-no-grow"><img src="quote.png"></div>
+                    <div class="font-normal text-base leading-normal my-4 italic text-grey-darkest">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will get you a complete account of the system, and expand the actual teachings of the great explorer of the truth </div>
+                    <div class="hidden w-8 flex-no-shrink flex-no-grow"><img src="quote.png" style="transform: rotate(180deg)"></div>
+                </div>
+                <div class="font-normal text-base text-grey-light">Cris Evans | Senior Marketer</div>
+                <div class="flex flex-row flex-no-shrink flex-no-grow mt-4 items-center">
+                    <div class="w-2 h-2 rounded-full bg-blue mx-1"></div>
+                    <div class="w-1 h-1 rounded-full bg-blue opacity-75 mx-1"></div>
+                    <div class="w-1 h-1 rounded-full bg-blue opacity-75 mx-1"></div>
+                    <div class="w-1 h-1 rounded-full bg-blue opacity-75 mx-1"></div>
+                </div>
+        </section>
+
+        <!--READY TO GET STARTED-->
+        <section class="flex flex-col bg-white items-center justify-center flex-no-shrink flex-no-grow py-8">
+            <div class="flex flex-row mx-12">
+                <div class="flex flex-col justify-center mx-12">
+                    <div class="font-extrabold text-3xl mb-6"> Ready to Get Started ?</div>
+                    <div class="flex flex-row items-center" style="min-width: 310px">
+                        <div class="text-sm text-center text-white px-4 py-3 font-normal rounded-full mr-auto hover:shadow cursor-pointer bg-blue" style="width:140px"> Book a Demo </div>
+                        <div class="mx-2 text-sm font-semibold">Call us : 8877-665-544</div>
+                    </div>
+                </div>
+                <div class="w-auto px-8 max-w-sm"><img src="dashboard.png" style="min-width: 300px;"></div>
+            </div>
+        </section>
+
+        <!--ekincare Footer-->
+        <footer>
+            <div class="bg-grey-lighter mb-6" style="height: 1px"></div>
+            <div>
+                <div class="font-semibold text-sm text-center mb-4 text-grey-darkest"> info@ekincare.com &nbsp;&nbsp; 8824-885-885 </div>
+                <div class="font-normal text-xs text-center mb-4">Patent Pending #201641009211, #201641031245, #201641009219 ©</div>
+            </div>
+            <div class="flex flex-col bg-grey-darkest h-6 flex-no-shrink flex-no-grow justify-center">
+                <div class="font-light text-xs text-white text-center">2018 | © Aayuv Technologies Pvt. Ltd. </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
